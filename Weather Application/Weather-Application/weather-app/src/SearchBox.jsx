@@ -16,7 +16,6 @@ export default function SearchBox({ updateInfo }) {
         try{
             let response = await fetch(`${API_URL}?access_key=${API_KEY}&query=${city}`);
             let data = await response.json();
-            console.log(data);
             let result = {
                 city : data.location.name,
                 temp : data.current.temperature,
