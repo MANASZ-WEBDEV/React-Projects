@@ -10,7 +10,7 @@ export default function SearchBox({ updateInfo }) {
 
     const API_URL = "http://api.weatherstack.com/current";
 
-    const API_KEY = "79d972e6d6137ddfbc200cbf1b2d3eaf";
+    const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
     let getWeatherInfo = async () =>{
         try{
